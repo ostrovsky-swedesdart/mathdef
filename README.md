@@ -42,7 +42,7 @@ var MathDef = require('./mathdef/app.js').MathDef;
 console.log(new MathDef('PI');
 ```
 
-ECMAScript 6, ES8:
+ECMAScript 6, ES6:
 ```js
 import { MathDef } from './mathdef/app.js';
 export const testing = new MathDef('PI');
