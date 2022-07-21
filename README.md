@@ -33,6 +33,22 @@ To Error:
 ```js
 var error = require('./mathdef/app.js).MathError;
 ```
+
+Using To Lib:
+
+CJS:
+```js
+var MathDef = require('./mathdef/app.js').MathDef;
+console.log(new MathDef('PI');
+```
+
+ECMAScript 6, ES8:
+```js
+import { MathDef } from './mathdef/app.js';
+export const testing = new MathDef('PI');
+console.log(testing)
+```
+
 To require this module explicitly, use `const a = require('./mathdef/app.js')` which tells the node.js module
 lookup algorithm (also used by browserify) to use the **npm module** named `buffer`
 instead of the **node.js core** module named `MathDef`!
