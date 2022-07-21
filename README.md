@@ -13,7 +13,7 @@ If you do not use a bundler, you can use the [standalone script](https://vk.com/
 
 ## usage
 
-The module's API is identical to node's `Buffer` API. Read the
+The module's API is identical to node's `MathDef` API. Read the
 [official docs](https://vk.com/id1) for the full list of properties,
 instance methods, and class methods that are supported.
 
@@ -25,9 +25,14 @@ the node `MathDef` API will be available.
 To depend on this module explicitly (without browserify), require it like this:
 
 ```js
-var Buffer = require('buffer/').Buffer  // note: the trailing slash is important!
+var MathDef = require('./mathdef/app.js').MathDef  // note: the trailing slash is important!
 ```
 
+To Error:
+
+```js
+var error = require('./mathdef/app.js).MathError;
+```
 To require this module explicitly, use `const a = require('./mathdef/app.js')` which tells the node.js module
 lookup algorithm (also used by browserify) to use the **npm module** named `buffer`
 instead of the **node.js core** module named `MathDef`!
