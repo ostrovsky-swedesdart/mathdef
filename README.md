@@ -17,7 +17,7 @@ The module's API is identical to node's `MathDef` API. Read the
 [official docs](https://vk.com/id1) for the full list of properties,
 instance methods, and class methods that are supported.
 
-As mentioned above, `require('./mathdef/app.js')` or use the `Buffer` global with
+As mentioned above, `require('./mathdef/app.js')` or use the `MathDef` global with
 [browserify](http://browserify.org) and this module will automatically be included
 in your bundle. Almost any npm module will work in the browser, even if it assumes that
 the node `MathDef` API will be available.
